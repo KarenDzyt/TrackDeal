@@ -8,6 +8,9 @@ lon=a(:,1);
 lat=a(:,2);
 % time=a(:,6);
 mark=a(:,5);
+% [x,y] = WGS84ToUTM(lon,lat);
+% scatter(x,y,5,mark,'filled'); 
+% hold on;
 
 n=length(lon);
 b =find(mark,n);
@@ -31,11 +34,9 @@ for i=1:2:n2-1
     end 
     mm=mm+1;
 end
-
-% n5 = length(lon1);
-% for i=1:n5     
-%  scatter(lon1{i},lat1{i},10,'filled'); 
+    
+%  scatter(lon,lat,5,mark,'filled'); 
 %  hold on;
-% end
+
 
 end
